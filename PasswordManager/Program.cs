@@ -1,6 +1,6 @@
 namespace PasswordManager
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -12,6 +12,9 @@ namespace PasswordManager
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new login());
+
+            DataContext dc = new DataContext();
+            var x = dc.Users;
         }
     }
 }
