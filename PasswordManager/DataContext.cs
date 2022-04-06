@@ -15,6 +15,7 @@ namespace PasswordManager
 
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<SavedAccount> SavedAccounts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
