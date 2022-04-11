@@ -44,6 +44,7 @@
             this.loginButton.TabIndex = 0;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // usernameInput
             // 
@@ -58,6 +59,7 @@
             this.passwordInput.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.passwordInput.Location = new System.Drawing.Point(202, 180);
             this.passwordInput.Name = "passwordInput";
+            this.passwordInput.PasswordChar = '*';
             this.passwordInput.Size = new System.Drawing.Size(100, 23);
             this.passwordInput.TabIndex = 2;
             // 
